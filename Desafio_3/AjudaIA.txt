@@ -1,0 +1,19 @@
+Tenho essa classe PagamentoService em C#. Ela já valida se o valor é maior que 10.000.
+
+public class PagamentoService
+{
+    private readonly string connectionString = 
+        "mongodb://usuario:senha@host:27017/ClienteFinanceiroDB";
+        
+    public bool ProcessarPagamento(decimal valor, string cpfCliente)
+    {
+        if (valor > 10000)
+        {
+            throw new Exception("Limite excedido");
+        }
+        // TODO: lógica para salvar no MongoDB
+        return true;
+    }
+}
+
+Preciso implementar a parte que salva no MongoDB (CPF, valor), com tratamento básico de erros. Pode me mostrar como ficaria o código?
