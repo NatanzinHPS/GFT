@@ -16,7 +16,7 @@ public class CafeDosDevs {
         }
 
         int totalSemana = totalXicarasDia * 5; 
-        int estoque = 100;
+        final int estoque = 100;
 
         System.out.println("Total da semana: " + totalSemana + " xícaras");
 
